@@ -62,6 +62,6 @@ exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd ":
 #  ip     => '127.0.0.1',
 #}
 
-include users
+#include users
 include skeleton
 }
