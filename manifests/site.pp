@@ -72,6 +72,6 @@ exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd ":
 #  admin => 'fundamentals',
 #}
 
-user::managed_user { ['fundamentals', 'test', 'anothertest']:
+users::managed_user { ['fundamentals', 'test', 'anothertest']:
 }
 }
