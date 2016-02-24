@@ -66,5 +66,9 @@ exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd ":
 
 #include users
 #include skeleton
-include nginx
+#include nginx
+#include aliases
+class { 'aliases':
+  admin => 'fundamentals',
+}
 }
