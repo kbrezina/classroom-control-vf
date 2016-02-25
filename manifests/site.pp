@@ -71,7 +71,7 @@ exec { "cowsay 'Welcome to ${::fqdn}!' > /etc/motd ":
 #include skeleton
 #include nginx
 class { 'nginx':
-  root => '/var/xxx',
+#  root => '/var/xxx',
 }
 #include aliases
 #class { 'aliases':
