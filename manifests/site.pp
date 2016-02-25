@@ -78,7 +78,8 @@ class { 'nginx':
 #  admin => 'fundamentals',
 #}
 
-users::managed_user { ['fundamentals', 'test', 'anothertest']:
-}
-include users::admins
+#users::managed_user { ['fundamentals', 'test', 'anothertest']:
+#}
+#include users::admins
+include wrappers::mystaging
 }
