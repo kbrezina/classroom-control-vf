@@ -1,6 +1,6 @@
 class nginx(
   $root = $::nginx::params::default_doc_root
-) inherits params
+) inherits nginx::params
 {
 
 $doc_root = $root
