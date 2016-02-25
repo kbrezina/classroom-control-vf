@@ -1,8 +1,11 @@
-class nginx{
+class nginx(
+  $root = '/var/www'
+)
+{
 $package_name = 'nginx'
 $owner        = 'root'
 $group        = $owner
-$doc_root     = '/var/www'
+$doc_root     = $root
 $conf_dir     = '/etc/nginx'
 $block_dir    = "${conf_dir}/conf.d"
 $logdir       = "/var/log/${package_name}"
